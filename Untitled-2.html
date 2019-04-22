@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decoracion :D</title>
+</head>
+<body>
+
+    <script>
+        //Bucles (recorrer elementos) while, for, do while, foreach
+        //for --> se usa para recorrer una cantidad CONOCIDA de elementos (ej: ir del 1 al 10)
+        //for (inicio, fin, incremento/decremento)     
+
+        var i;
+//i++ -> La variable i en cada vuelta se incrementa en una unidad
+// i = i+2
+// i+= 2
+       /* for(i = 1;i<=10; i++) {
+            document.write(i);
+            document.write("<br>");
+        }
+        document.write("Y cuando me toca a mi?")*/
+        //var numero_ingresado = 
+        
+//mediante un prompt el usuario ingrese un valor parseInt() (recordar que lo que devuelve el prompt es TEXTO) ::
+// calcular la tabla (hasta x20) del numero que ingresa el humano
+ 
+  var pares = 0;
+  var positivos = 0;
+  var negativos =0;
+
+        for (i = 1; i <=3; i++) {
+            var numero = parseInt(prompt ("Ingresar un numero"));
+                // 8
+                if (numero > 0) {
+                    // 3
+              
+                      positivos++;
+                      if(numero %2 == 0) {
+                          pares++;
+                      }
+                } else if(numero < 0) {
+                    negativos++;
+                    if(numero %2 == 0) {
+                          pares++;
+                      }
+                }
+
+                
+
+            
+        }
+        document.write ("numeros positivos son " + positivos + ", numeros pares son " + pares + " y los numeros negativos son " + negativos);
+    </script>
+
+
+
+</body>
